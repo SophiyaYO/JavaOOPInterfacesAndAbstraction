@@ -1,4 +1,4 @@
-public interface Car {
+public interface Car extends Serializable{
     Integer TIRES = 4;
 
     String getModel();

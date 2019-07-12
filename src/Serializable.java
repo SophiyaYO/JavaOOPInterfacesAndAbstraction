@@ -1,2 +1,2 @@
-public interface Serializable extends Car{
+public interface Serializable  {
 }
