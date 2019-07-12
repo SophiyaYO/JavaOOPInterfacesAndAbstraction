@@ -28,7 +28,7 @@ public class Seat   implements Car {
 
     @Override
     public String countryProduces() {
-        return this.countryProduces();
+        return this.countryProduces;
     }
 
     @Override
@@ -36,6 +36,6 @@ public class Seat   implements Car {
         return String.format("This is %s produced in %s and have %d tires",
                 this.getModel(),
                 this.countryProduces(),
-                this.);
+                TIRES);
     }
 }
