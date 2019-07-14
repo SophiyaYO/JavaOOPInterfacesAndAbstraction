@@ -8,6 +8,8 @@
 
 ### **Pr 01 Car Shop**
 
+[Solution for this Problem:] (JavaOOPInterfacesAndAbstraction/src/CarShop/.)
+
 Build hierarchy from classes and interfaces for this UML diagram
 
 **Serializable** *// is __*interface*__*
@@ -29,7 +31,6 @@ Build hierarchy from classes and interfaces for this UML diagram
 
 ### **Pr 02 Car Shop Extended**
 
-[Solution for this Problem:] (JavaOOPInterfacesAndAbstraction/src/CarShop/)
 
 Extend previous problem:
 
