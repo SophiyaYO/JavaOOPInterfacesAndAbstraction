@@ -1,3 +1,5 @@
+package CarShopExtended;
+
 public class Audi extends CarImpl implements  Rentable{
 
     private Integer minRentDay;

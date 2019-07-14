@@ -1,3 +1,5 @@
+package CarShopExtended;
+
 public class Seat extends CarImpl implements Sellable{
 
     private Double price;

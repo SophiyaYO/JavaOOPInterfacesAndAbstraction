@@ -21,6 +21,6 @@ Build hierarchy from classes and interfaces for this UML diagram
 > - +countryProduced(): String
 
 
-**Seat** *// __*implements Car*__*
+**CarShopExtended.Seat** *// __*implements Car*__*
 
 > - +toString(): String

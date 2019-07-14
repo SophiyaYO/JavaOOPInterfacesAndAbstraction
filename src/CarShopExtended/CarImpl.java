@@ -1,3 +1,5 @@
+package CarShopExtended;
+
 import CarShop.Car;
 
 public class CarImpl implements Car {

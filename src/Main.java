@@ -1,4 +1,8 @@
 import CarShop.Car;
+import CarShopExtended.Audi;
+import CarShopExtended.Rentable;
+import CarShopExtended.Seat;
+import CarShopExtended.Sellable;
 
 public class Main {
         public static void main(String[] args) {
