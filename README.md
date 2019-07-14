@@ -34,9 +34,11 @@ Extend previous problem:
 |**Car**|
 | --- |
    ^
+   
    |
+   
    |
-   |
-|**CarImpl|
-| --- |
+   
+|**CarImpl**|
+
 
