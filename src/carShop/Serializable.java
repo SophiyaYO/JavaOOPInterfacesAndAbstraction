@@ -1,4 +1,4 @@
-package CarShop;
+package carShop;
 
 public interface Serializable  {
 }

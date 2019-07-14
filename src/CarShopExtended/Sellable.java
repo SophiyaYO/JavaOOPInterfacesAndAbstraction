@@ -1,6 +1,6 @@
 package CarShopExtended;
 
-import CarShop.Car;
+import carShop.Car;
 
 public interface Sellable extends Car {
 

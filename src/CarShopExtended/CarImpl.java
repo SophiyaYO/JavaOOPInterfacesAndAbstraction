@@ -1,6 +1,6 @@
 package CarShopExtended;
 
-import CarShop.Car;
+import carShop.Car;
 
 public class CarImpl implements Car {
     private String model;

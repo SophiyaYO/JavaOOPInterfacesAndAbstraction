@@ -1,6 +1,6 @@
 package CarShopExtended;
 
-import CarShop.Car;
+import carShop.Car;
 
 public interface Rentable extends Car {
 

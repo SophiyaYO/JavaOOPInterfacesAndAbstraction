@@ -1,4 +1,4 @@
-package CarShop;
+package carShop;
 
 public class Seat01 implements Car {
     private String model;

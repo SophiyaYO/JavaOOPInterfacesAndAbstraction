@@ -45,7 +45,7 @@ public class Main {
 
 [Click ME for solution](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/CarShop/)
 
-[Relative Link](src/CarShop)
+[Relative Link](src/carShop)
 
 ************************************************************
 
