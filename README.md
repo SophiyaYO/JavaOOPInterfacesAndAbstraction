@@ -100,7 +100,7 @@ private static void printCarInfo(Car car) {
 
 Build hierarchy from classes and interfaces for this UML diagram
 
-![](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/blob/master/uml03.PNG)
+![](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/blob/master/src/sayHello/uml03.PNG)
 
 Your hierarchy have to be used with this code:
 
