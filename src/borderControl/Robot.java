@@ -1,3 +1,5 @@
+package borderControl;
+
 public class Robot implements Identifiable {
     private String id;
     private String model;

@@ -1,3 +1,7 @@
+import borderControl.Citizen;
+import borderControl.Identifiable;
+import borderControl.Robot;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

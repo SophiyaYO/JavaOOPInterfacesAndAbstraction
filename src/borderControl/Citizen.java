@@ -1,3 +1,5 @@
+package borderControl;
+
 public class Citizen implements Identifiable {
     private String name;
     private int age;
