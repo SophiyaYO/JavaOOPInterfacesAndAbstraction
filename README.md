@@ -100,4 +100,4 @@ private static void printCarInfo(Car car) {
 
 Build hierarchy from classes and interfaces for this UML diagram
 
-![](JavaOOPInterfacesAndAbstraction/uml03.PNG)
+![picture](JavaOOPInterfacesAndAbstraction/uml03.PNG)
