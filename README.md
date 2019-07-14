@@ -5,10 +5,7 @@
 ## **Lab Problems**
 -------------------
 
-
 ### **Pr 01 Car Shop**
-
-[Solution for this Problem:](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/CarShop/)
 
 Build hierarchy from classes and interfaces for this UML diagram
 
@@ -26,6 +23,8 @@ Build hierarchy from classes and interfaces for this UML diagram
 **CarShopExtended.Seat** *// __*implements Car*__*
 
 > - +toString(): String
+
+[Click ME for solution](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/CarShop/)
 
 ************************************************************
 
@@ -69,3 +68,6 @@ private static void printCarInfo(Car car) {
 }
 }
 ```
+
+[Click ME for solution](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/CarShopExtended)
+[Relative Link](src/CarShopExtended)
