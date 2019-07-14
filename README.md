@@ -10,7 +10,7 @@
 
 __Build hierarchy from classes and interfaces for this UML diagram__
 
-_Car_ *// is interface an extends interface Serializable*
+__*Car*__ *// is interface an extends interface Serializable*
 ```
 - +TIRES: Integer
 - +getModel(): String
