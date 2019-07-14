@@ -1,10 +1,8 @@
 public class Robot implements Identifiable {
-    private String name;
     private String id;
     private String model;
 
-    public Robot(String name,String id, String model) {
-        this.name = name;
+    public Robot(String id, String model) {
         this.id = id;
         this.model = model;
     }
