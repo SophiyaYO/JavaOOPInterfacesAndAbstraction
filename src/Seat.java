@@ -2,8 +2,7 @@ public class Seat extends CarImpl implements Sellable{
 
     private Double price;
 
-    public Seat(String model, String color, Integer horsePower,
-                String countryProduces, Double price) {
+    public Seat(String model, String color, Integer horsePower, String countryProduces, Double price) {
         super(model, color, horsePower, countryProduces);
         this.price = price;
     }
