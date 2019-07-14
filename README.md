@@ -6,7 +6,7 @@
 -------------------
 
 
-### **Pr 01**
+### **Pr 01 Car Shop**
 
 Build hierarchy from classes and interfaces for this UML diagram
 
@@ -24,3 +24,19 @@ Build hierarchy from classes and interfaces for this UML diagram
 **CarShopExtended.Seat** *// __*implements Car*__*
 
 > - +toString(): String
+
+************************************************************
+
+### **Pr 02 Car Shop Extended**
+
+Extend previous problem:
+
+|**Car**|
+| --- |
+   ^
+   |
+   |
+   |
+|**CarImpl|
+| --- |
+
