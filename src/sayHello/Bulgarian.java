@@ -1,8 +1,9 @@
-public class Chinese implements Person{
+package sayHello;
 
+public class Bulgarian implements Person {
     private String name;
 
-    public Chinese(String name) {
+    public Bulgarian(String name) {
         this.name = name;
     }
 
@@ -13,6 +14,6 @@ public class Chinese implements Person{
 
     @Override
     public String sayHello() {
-        return "Djydjybydjy";
+        return "Здравей";
     }
 }

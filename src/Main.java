@@ -1,3 +1,8 @@
+import sayHello.Bulgarian;
+import sayHello.Chinese;
+import sayHello.European;
+import sayHello.Person;
+
 import java.util.ArrayList;
 import java.util.List;
 
