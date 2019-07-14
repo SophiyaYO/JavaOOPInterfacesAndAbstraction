@@ -1,6 +1,6 @@
 package sayHello;
 
-public interface Person {
+public interface Person{
     String getName();
 
     String sayHello();
