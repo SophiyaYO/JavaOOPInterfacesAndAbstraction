@@ -1,10 +1,10 @@
 package sayHello;
 
-public class Bulgarian implements Person {
+public class Bulgarian extends BasePerson {
     private String name;
 
     public Bulgarian(String name) {
-        this.name = name;
+        super(name);
     }
 
     @Override
