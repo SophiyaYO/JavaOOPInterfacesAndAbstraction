@@ -31,10 +31,10 @@ Build hierarchy from classes and interfaces for this UML diagram
 
 Extend previous problem:
 
-| **_interface_ Car** | |
+| _interface_ **Car** | |
 | --- |  --- |
-| **_class_ CarImpl implements _Car_** | |
-| **_interface_ Rentable extend _Car_** | ** _interface_ Sellable** _Car_ |
+| _class_ **CarImpl** implements _Car_ | |
+| _interface_ **Rentable** extend _Car_ | **_interface_ Sellable _Car_ |
 | **_class_ Audi extends _CarImpl_ implements _Rentable_** | **_class_ Seat extends _CarImpl_ implements _Sellable_** |
 
 
