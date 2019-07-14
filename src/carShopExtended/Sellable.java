@@ -1,4 +1,4 @@
-package CarShopExtended;
+package carShopExtended;
 
 import carShop.Car;
 

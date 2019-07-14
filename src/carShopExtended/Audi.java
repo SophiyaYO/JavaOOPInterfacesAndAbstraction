@@ -1,4 +1,4 @@
-package CarShopExtended;
+package carShopExtended;
 
 public class Audi extends CarImpl implements  Rentable{
 
