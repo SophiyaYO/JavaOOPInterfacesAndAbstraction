@@ -20,7 +20,7 @@ Build hierarchy from classes and interfaces for this UML diagram
 > - +countryProduced(): String
 
 
-**CarShopExtended.Seat** *// __*implements Car*__*
+**carShopExtended.Seat** *// __*implements Car*__*
 
 > - +toString(): String
 
@@ -92,6 +92,13 @@ private static void printCarInfo(Car car) {
 
 [**Click ME for solution**](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/CarShopExtended)
 
-[Relative Link](src/CarShopExtended)
+[Relative Link](src/carShopExtended)
 
 ************************************************************
+
+### **Pr 03 Say Hello**
+
+Build hierarchy from classes and interfaces for this UML diagram
+
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
