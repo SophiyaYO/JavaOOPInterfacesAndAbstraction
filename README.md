@@ -29,6 +29,8 @@ Build hierarchy from classes and interfaces for this UML diagram
 
 ### **Pr 02 Car Shop Extended**
 
+[Solution for this Problem:] (JavaOOPInterfacesAndAbstraction/src/CarShop/)
+
 Extend previous problem:
 
 | **interface_** | **Car** |
