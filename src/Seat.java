@@ -20,6 +20,6 @@ public class Seat extends CarImpl implements Sellable{
                 System.lineSeparator() +
                 String.format(format,
                         this.getModel(),
-                        this.price);
+                        this.getPrice());
     }
 }

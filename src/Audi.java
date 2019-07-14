@@ -28,7 +28,7 @@ public class Audi extends CarImpl implements  Rentable{
         return super.toString() +
                 System.lineSeparator() +
                 String.format(format,
-                        this.minRentDay,
-                        this.pricePerDay);
+                        this.getMinRentDay(),
+                        this.getPricePerDay());
     }
 }
