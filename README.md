@@ -10,8 +10,9 @@
 
 Build hierarchy from classes and interfaces for this UML diagram
 
-__*Serializable*__ *// is **interface***
-__*Car*__ *// is **interface** an **extends** interface **Serializable***
+**Serializable** *// is _*interface*_*
+
+**Car** *// is **interface** an **extends** interface **Serializable***
 
 > - +TIRES: Integer
 > - +getModel(): String
@@ -20,6 +21,6 @@ __*Car*__ *// is **interface** an **extends** interface **Serializable***
 > - +countryProduced(): String
 
 
-__*Seat*__ *// **implements Car***
+**Seat** *// __*implements Car*__*
 
 > - +toString(): String
