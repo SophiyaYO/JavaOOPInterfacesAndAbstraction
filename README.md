@@ -8,7 +8,7 @@
 
 ### **Pr 01 Car Shop**
 
-https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/CarShop
+https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/CarShop  - automatic!
 [Solution for this Problem:] (https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/CarShop)
 
 Build hierarchy from classes and interfaces for this UML diagram
