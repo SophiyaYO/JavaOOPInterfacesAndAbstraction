@@ -1,3 +1,5 @@
+package CarShop;
+
 public class Seat   implements Car {
     private String model;
     private String color;

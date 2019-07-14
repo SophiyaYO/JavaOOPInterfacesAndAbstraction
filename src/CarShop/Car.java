@@ -1,3 +1,5 @@
+package CarShop;
+
 public interface Car extends Serializable{
     Integer TIRES = 4;
 

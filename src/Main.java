@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import CarShop.Car;
+import CarShop.Seat;
 
 public class Main {
     public static void main(String[] args) {
