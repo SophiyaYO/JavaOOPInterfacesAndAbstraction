@@ -1,12 +1,12 @@
 package CarShop;
 
-public class Seat  implements Car {
+public class Seat01 implements Car {
     private String model;
     private String color;
     private Integer horsePower;
     private String countryProduces;
 
-    public Seat(String model, String color, Integer horsePower, String countryProduces) {
+    public Seat01(String model, String color, Integer horsePower, String countryProduces) {
         this.model = model;
         this.color = color;
         this.horsePower = horsePower;
