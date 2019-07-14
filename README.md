@@ -31,9 +31,9 @@ Build hierarchy from classes and interfaces for this UML diagram
 
 Extend previous problem:
 
-| **Car** |
+| **Car** | |
 | --- |  --- |
-| **CarImpl** |
+| **CarImpl** | |
 | **Rentable** | **Sellable** |
 
 
