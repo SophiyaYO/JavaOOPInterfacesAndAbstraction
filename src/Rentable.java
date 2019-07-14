@@ -1,4 +1,6 @@
-public interface Rentable {
+import CarShop.Car;
+
+public interface Rentable extends Car {
 
     Integer getMinRentDay();
 
