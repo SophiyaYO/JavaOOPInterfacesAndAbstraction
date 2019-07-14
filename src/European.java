@@ -7,11 +7,11 @@ public class European implements Person {
 
     @Override
     public String getName() {
-        return null;
+        return this.name;
     }
 
     @Override
     public String sayHello() {
-        return null;
+        return "Hello";
     }
 }
