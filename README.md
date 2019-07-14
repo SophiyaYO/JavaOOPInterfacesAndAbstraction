@@ -1,23 +1,23 @@
 # **Interfaces and Abstraction**
+================================
 
 ## **Lab Problems**
+-------------------
 
 ### **Pr 01**
 
 __Build hierarchy from classes and interfaces for this UML diagram__
 
-<<inteface>>
-
-<<Car>>// extends interface Serializable
+_Car_ *// is interface an extends interface Serializable*
 ```
-+TIRES: Integer
-+getModel(): String
-+getColor(): String
-+getHorsePower(): Integer
-+countryProduced(): String
+- +TIRES: Integer
+- +getModel(): String
+- +getColor(): String
+- +getHorsePower(): Integer
+- +countryProduced(): String
 ```
 
-<<Serializable>>
+_Serializable_ *// is interface*
 
-Seat// implements interface Car
-+toString(): String
+_Seat_ *// implements interface Car*
+- +toString(): String
