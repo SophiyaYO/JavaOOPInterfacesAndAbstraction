@@ -19,7 +19,8 @@ __*Car*__ *// is interface an extends interface Serializable*
 - +countryProduced(): String
 ```
 
-_Serializable_ *// is interface*
+__*Serializable*__ *// is interface*
 
-_Seat_ *// implements interface Car*
-- +toString(): String
+__*Seat*__ *// implements interface Car*
+
+> - +toString(): String
