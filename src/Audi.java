@@ -1,10 +1,10 @@
 public class Audi extends CarImpl implements  Rentable{
 
     private Integer minRentDay;
-    private double pricePerDay;
+    private Double pricePerDay;
 
     public Audi(String model, String color, Integer horsePower,
-                String countryProduces,Integer minRentDay, double pricePerDay) {
+                String countryProduces,Integer minRentDay, Double pricePerDay) {
 
         super(model, color, horsePower, countryProduces);
         this.minRentDay = minRentDay;
