@@ -7,7 +7,6 @@ public class Main {
 
             Scanner scanner = new Scanner(System.in);
 
-
             List<Identifiable> all = new ArrayList<>();
             String input;
             while (!"End".equals(input = scanner.nextLine())) {
@@ -19,7 +18,7 @@ public class Main {
 
                     all.add(possibleHuman);
                 } else {
-                    Robot possibleRobot = new Robot(tokens[1], tokens[0]);
+                    Robot possibleRobot = new Robot(tokens[0], tokens[1]);
 
                     all.add(possibleRobot);
                 }
@@ -28,7 +27,7 @@ public class Main {
             String lastDigits = scanner.nextLine();
 
             for (Identifiable human : all) {
-                if (human.getId().substring(human.getId().length() - 3).equals(lastDigits)) {
+                if (human.getId().substring(human.getId().length() - lastDigits.length()).equals(lastDigits)) {
                     System.out.println(human.getId());
                 }
             }
