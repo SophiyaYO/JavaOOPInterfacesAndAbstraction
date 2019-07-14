@@ -10,7 +10,7 @@
 
 Build hierarchy from classes and interfaces for this UML diagram
 
-**Serializable** *// is _*interface*_*
+**Serializable** *// is __*interface*__*
 
 **Car** *// is **interface** an **extends** interface **Serializable***
 
