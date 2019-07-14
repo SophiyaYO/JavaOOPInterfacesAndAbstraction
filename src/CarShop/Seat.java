@@ -1,6 +1,6 @@
 package CarShop;
 
-public class Seat   implements Car {
+public class Seat  implements Car {
     private String model;
     private String color;
     private Integer horsePower;
