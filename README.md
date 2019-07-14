@@ -130,3 +130,37 @@ public class Main{
 
 ************************************************************
 
+### **Pr 04 Say Hello Extend**
+
+Build hierarchy from classes and interfaces for this UML diagram
+
+![](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/blob/master/src/sayHello/uml04.PNG)
+
+Your hierarchy have to be used with this code:
+
+ Main.java
+```java
+
+public class Main{
+ public static void main(String[] args) {
+     List<Person> persons = new ArrayList<>();
+        persons.add(new Bulgarian("Pesho"));
+            persons.add(new European("Pesho"));
+                persons.add(new Chinese("Pesho"));
+
+    for (Person person : persons) {
+        print(person);
+    }
+}
+   private static void print(Person person) {
+    System.out.println(person.sayHello());
+}
+}
+```
+
+[**Click ME for solution**](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/sayHello)
+
+[Relative Link](src/sayHello)
+
+************************************************************
+
