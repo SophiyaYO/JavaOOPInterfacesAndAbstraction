@@ -31,12 +31,12 @@ Build hierarchy from classes and interfaces for this UML diagram
 
 Extend previous problem:
 
-| **interface_ Car** | |
+| **interface_** | **Car** |
 | --- |  --- |
-| _class_ **CarImpl** _implements_ **_Car_** | |
+| _class_ **CarImpl**  | _implements_ **_Car_**|
 |` +CarImpl ` | `(model, color, horsePower, countryProduced` |
 |` +toString():`| ` String` |
-| _interface_ **Rentable** _extend_ **_Car_** | **_interface_ **Sellable** _extend_ **_Car_** |
+| _interface_ **Rentable** _extend_ **_Car_** | _interface_ **Sellable** _extend_ **_Car_** |
 | _class_ **Audi** _extend_ **_CarImpl_** _implements_ **_Rentable_** | _class_ **Seat** _extend_ **_CarImpl_** _implements_ **_Sellable_** |
 
 
