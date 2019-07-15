@@ -1,7 +1,7 @@
 package Ferrari;
 
 public interface Car {
-    public String brakes();
+     String brakes();
 
-    public String gas();
+     String gas();
 }

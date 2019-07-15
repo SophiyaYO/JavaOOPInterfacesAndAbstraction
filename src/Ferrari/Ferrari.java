@@ -1,12 +1,22 @@
 package Ferrari;
 
 public class Ferrari implements Car {
-    private final String MODEL = "488-Spider";
 
+    private String model;
     private String driverName;
 
     public Ferrari(String driverName) {
+        this.setDriverName(driverName);
+        this.model = "488-Spider";
+    }
+
+
+    private void setDriverName(String driverName) {
         this.driverName = driverName;
+    }
+
+    private String getDriverName() {
+        return this.driverName;
     }
 
     @Override
@@ -22,9 +32,9 @@ public class Ferrari implements Car {
     @Override
     public String toString() {
         return String.format("%s/%s/%s/%s",
-                MODEL,
+                this.model,
                 this.brakes(),
                 this.gas(),
-                this.driverName);
+                this.getDriverName());
     }
 }

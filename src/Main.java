@@ -1,4 +1,3 @@
-import Ferrari.Car;
 import Ferrari.Ferrari;
 
 import java.util.Scanner;
