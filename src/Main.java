@@ -1,4 +1,4 @@
-import Ferrari.Ferrari;
+import ferrari.Ferrari;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Ferrari;
+package ferrari;
 
 public class Ferrari implements Car {
 
