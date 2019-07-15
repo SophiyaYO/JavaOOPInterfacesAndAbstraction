@@ -246,7 +246,7 @@ The input will always be valid, no need to check it explicitly! The Driver's nam
 ## **Exercise Problems**
 -------------------
 
-### **Problem 1. Define an Interface defineAnInterfacePerson.Person**
+### **Problem 1. Define an Interface Person**
 
 Define an interface defineAnInterfacePerson.Person with methods getName and getAge. 
 
@@ -281,6 +281,61 @@ public class Main{
 | Pesho | 2 |
 | 25 | Pesho |
 | | 25 |
+
+
+[**Click ME for solution**](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/defineAnInterfacePerson)
+
+[Relative Link](src/defineAnInterfacePerson)
+
+*********************************
+
+### **Problem 2. Problem 2.	Multiple Implementation**
+
+Using the code from the previous task, define an interface Identifiable 
+
+with a String method getId and an interface Birthable with a String method getBirthDate 
+
+and implement them in the Citizen class. Rewrite the Citizen constructor to accept the new parameters.
+
+Add the following code to your main method and submit it to Judge.
+
+![](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/blob/master/src/defineAnInterfacePerson/uml1.PNG)
+
+```java
+
+public class Main{
+ public static void main(String[] args) {
+        Class[] citizenInterfaces = Citizen.class.getInterfaces();
+            if (Arrays.asList(citizenInterfaces).contains(Birthable.class)
+                    && Arrays.asList(citizenInterfaces).contains(Identifiable.class)) {
+                    
+                Method[] methods = Birthable.class.getDeclaredMethods();
+                    methods = Identifiable.class.getDeclaredMethods();
+                    
+                    Scanner scanner = new Scanner(System.in);
+                    String name = scanner.nextLine();
+                    int age = Integer.parseInt(scanner.nextLine());
+                   
+                    String id = scanner.nextLine();
+                    String birthDate = scanner.nextLine();
+                    Identifiable identifiable = new Citizen(name,age,id,birthDate);
+                    Birthable birthable = new Citizen(name,age,id,birthDate);
+                    
+                    System.out.println(methods.length);
+                    System.out.println(methods[0].getReturnType().getSimpleName());
+                    System.out.println(methods.length);
+                    System.out.println(methods[0].getReturnType().getSimpleName());
+            }
+ }
+}
+```
+
+| Input	| Output |
+| --- | --- |
+| Pesho | 1 |
+| 25 | String |
+| 9105152287 | 1 |
+| 15/05/1991 | String |
 
 
 [**Click ME for solution**](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/defineAnInterfacePerson)
