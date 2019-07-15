@@ -10,22 +10,7 @@ public class Main {
 
         String name = scanner.nextLine();
 
-        Ferrari newCar = new Ferrari(name) {
-            @Override
-            public String brakes() {
-                return super.brakes();
-            }
-
-            @Override
-            public String gas() {
-                return super.gas();
-            }
-
-            @Override
-            public String toString() {
-                return super.toString();
-            }
-        };
+        Ferrari newCar = new Ferrari(name);
 
         System.out.println(newCar.toString());
     }

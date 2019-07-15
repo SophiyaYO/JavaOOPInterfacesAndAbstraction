@@ -1,15 +1,12 @@
 package Ferrari;
 
-import java.time.Month;
-
-public abstract class Ferrari implements Car {
-    private String MODEL = "488-Spider";
+public class Ferrari implements Car {
+    private final String MODEL = "488-Spider";
 
     private String driverName;
 
     public Ferrari(String driverName) {
         this.driverName = driverName;
-
     }
 
     @Override
@@ -19,7 +16,7 @@ public abstract class Ferrari implements Car {
 
     @Override
     public String gas() {
-        return "Zadu6avam sA!";
+        return "brum-brum-brum-brrrrr";
     }
 
     @Override
