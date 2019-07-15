@@ -240,4 +240,51 @@ The input will always be valid, no need to check it explicitly! The Driver's nam
 
 [Relative Link](src/ferrari)
 
-************************************************************
+*********************************
+
+
+## **Exercise Problems**
+-------------------
+
+### **Problem 1. Define an Interface defineAnInterfacePerson.Person**
+
+Define an interface defineAnInterfacePerson.Person with methods getName and getAge. 
+
+Define a class defineAnInterfacePerson.Citizen which implements defineAnInterfacePerson.Person and has a constructor which takes a String name and an int age.
+
+Add the following code to your main method and submit it to Judge.
+
+
+![](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/blob/master/src/defineAnInterfacePerson/uml.PNG)
+
+```java
+
+public class Main{
+ public static void main(String[] args) {
+        Class[] citizenInterfaces = Citizen.class.getInterfaces();
+            if(Arrays.asList(citizenInterfaces).contains(Person.class)){
+                Method[] fields = Person.class.getDeclaredMethods();
+                Scanner scanner = new Scanner(System.in);
+                String name = scanner.nextLine();
+                int age = Integer.parseInt(scanner.nextLine());
+                Person person = new Citizen(name,age);
+                System.out.println(fields.length);
+                System.out.println(person.getName());
+                System.out.println(person.getAge());
+            }
+         }
+}
+```
+
+| Input	| Output |
+| --- | --- |
+| Pesho | 2 |
+| 25 | Pesho |
+| | 25 |
+
+
+[**Click ME for solution**](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/defineAnInterfacePerson)
+
+[Relative Link](src/defineAnInterfacePerson)
+
+*********************************
