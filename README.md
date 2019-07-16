@@ -503,7 +503,7 @@ being called in the format: "Calling... <number>"
 
 >	- If there is a number in the input of the URLs, print: "Invalid URL!" and continue printing the rest of the URLs.
 
->	- If there is a character different from a digit in a number, print: "Invalid number!" and continue to the next number.
+>- If there is a character different from a digit in a number, print: "Invalid number!" and continue to the next number.
 
 **Constraints**
 
