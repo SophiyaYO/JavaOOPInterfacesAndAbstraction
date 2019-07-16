@@ -486,42 +486,37 @@ You should end up with one class and two interfaces.
 
 The input comes from the console. It will hold two lines:
 
-> - First line: phone numbers to call (String), separated by spaces.
-
-> - Second line: sites to visit (String), separated by spaces.
+>- First line: phone numbers to call (String), separated by spaces.
+>- Second line: sites to visit (String), separated by spaces.
 
 **Output**
 
-
->	- First call all numbers in the order of input then browse all sites in order of input
-
->	- The functionality of calling phones is printing on the console the number which are 
-being called in the format: "Calling... <number>"
-
->	- The functionality of the browser should print on the console the site in format:
+>- First call all numbers in the order of input then browse all sites in order of input.
+>- The functionality of calling phones is printing on the console the number which are 
+being called in the format: "Calling... <number>".
+>- The functionality of the browser should print on the console the site in format:
 "Browsing: <site>!" \(pay attention to the exclamation mark when printing URLs)
-
->	- If there is a number in the input of the URLs, print: "Invalid URL!" and continue printing the rest of the URLs.
+>- If there is a number in the input of the URLs, print: "Invalid URL!" and continue printing the rest of the URLs.
 >- If there is a character different from a digit in a number, print: "Invalid number!" and continue to the next number.
 
 **Constraints**
 
->	- Each site's URL should consist only of letters and symbols \(No digits are allowed in the URL address)
+>- Each site's URL should consist only of letters and symbols \(No digits are allowed in the URL address)
 
 **Examples**
 
-| Input | |
+| Input | Output |
 | --- | --- |
 | 0882134215 0882134333 08992134215 0558123 3333 1 | Calling... 0882134215 |
 | http://softuni.bg http://youtube.com http://www.g00gle.com | Calling... 0882134333 |
-|| Calling... 08992134215 |
-|| Calling... 0558123 |
-|| Calling... 3333 |
-|| Calling... 1 |
-|| Browsing: http://softuni.bg! |
-|| Browsing: http://youtube.com! |
-|| Invalid URL!  |                    
- 
+| | Calling... 08992134215 |
+| | Calling... 0558123 |
+| | Calling... 3333 |
+| | Calling... 1 |
+| | Browsing: http://softuni.bg! |
+| | Browsing: http://youtube.com! |
+| | Invalid URL!  |                    
+
  
 [**Click ME for solution**](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/telephony)
 
