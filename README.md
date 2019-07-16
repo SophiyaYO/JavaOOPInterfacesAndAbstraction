@@ -344,7 +344,7 @@ public class Main{
 
 *********************************
 
-### **Problem 3. Problem 3.	Birthday Celebrations**
+### **Problem 3. Birthday Celebrations**
 
 It is a well known fact that people celebrate birthdays, it is also known that some people 
 
@@ -396,3 +396,65 @@ in that year in the format day/month/year \(the order of printing does not matte
 [**Click ME for solution**](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/defineAnInterfacePerson)
 
 [Relative Link](src/defineAnInterfacePerson)
+
+*******************************************************
+
+### **Problem 4. Food Shortage**
+
+Your totalitarian dystopian society suffers a shortage of food, so many rebels appear. 
+
+Extend the code from your previous (Problem 2.Multiple Implementation) task with new functionality to solve this task.
+
+Define a class Rebel which has a name, age and group (String), names are unique - 
+
+there will never be 2 Rebels/Citizens or a Rebel and Citizen with the same name. 
+
+Define an interface Buyer which defines a methods buyFood() and a getFood(). 
+
+Implement the Buyer interface in the Citizen and Rebel class, both Rebels and Citizens start with 0 food, 
+
+when a Rebel buys food his food increases by 5, when a Citizen buys food his food increases by 10.
+
+On the first line of the input you will receive an integer N - the number of people, 
+
+on each of the next N lines you will receive information in one of the following formats "\<name> \<age> \<id> \<birthdate>" for a Citizen
+ 
+or "\<name> \<age>\<group>" for a Rebel. After the N lines until the command "End" is received, you will receive names of people who bought food, 
+
+each on a new line. Note that not all names may be valid, in case of an incorrect name - nothing should happen.
+
+On the only line of output, you should print the total amount of food purchased
+
+![](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/blob/master/src/defineAnInterfacePerson/uml4.PNG)
+
+
+**Examples**
+| Input |  |   
+| --- | --- |
+| 2 | 20 |
+| Pesho 25 8904041303 04/04/1989 |  |
+| Stancho 27 WildMonkeys |  |
+| Pesho |  |
+| Gosho |  |
+| Pesho |  |
+| End |  |
+| === | === |
+| 4 | 25 |
+| Stamat 23 TheSwarm |  |
+| Toncho 44 7308185527 18/08/1973 |  |
+| Joro 31 Terrorists |  |
+| Penka 27 881222212 22/12/1988 |  |
+| Jiraf |  |
+| Joro |  |
+| Jiraf |  |
+| Joro |  |
+| Stamat |  |
+| Penka |  |
+| End |  |
+| --- | --- |
+
+[**Click ME for solution**](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/defineAnInterfacePerson)
+
+[Relative Link](src/defineAnInterfacePerson)
+
+*******************************************************

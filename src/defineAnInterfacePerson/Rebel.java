@@ -1,6 +1,6 @@
 package defineAnInterfacePerson;
 
-public class Rebel implements Buyer{
+public class Rebel implements Buyer,Person{
 
     private String name;
     private int age;
@@ -14,10 +14,12 @@ public class Rebel implements Buyer{
         this.food = 0;
     }
 
+    @Override
     public String getName() {
         return this.name;
     }
 
+    @Override
     public int getAge() {
         return this.age;
     }

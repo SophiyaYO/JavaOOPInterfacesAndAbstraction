@@ -1,5 +1,3 @@
-import carShopExtended.CarImpl;
-import defineAnInterfacePerson.Buyer;
 import defineAnInterfacePerson.Citizen;
 import defineAnInterfacePerson.Rebel;
 
@@ -33,7 +31,6 @@ public class Main {
             }
         }
 
-        int foodCount = 0;
         String input;
         while (!"End".equalsIgnoreCase(input = scanner.nextLine())) {
             boolean continueIterating = true;
@@ -41,6 +38,7 @@ public class Main {
                 if (citizen.getName().equals(input)) {
                     continueIterating = false;
                     citizen.buyFood();
+                    break;
                 }
             }
 
@@ -48,23 +46,25 @@ public class Main {
                 for (Rebel rebel : rebels) {
                     if (rebel.getName().equals(input)) {
                         rebel.buyFood();
+                        break;
                     }
                 }
             }
         }
 
-        foodCount += citizens
+      int  foodCount = citizens
                 .stream()
                 .mapToInt(Citizen::getFood)
-                .sum();
-
-        foodCount += rebels
+                .sum()
+                +
+                rebels
                 .stream()
                 .mapToInt(Rebel::getFood)
                 .sum();
 
-        System.out.println(foodCount);
-
+        if (foodCount > 0) {
+            System.out.println(foodCount);
+        }
     }
 }
 
