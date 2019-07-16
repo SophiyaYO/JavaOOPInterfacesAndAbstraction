@@ -1,6 +1,6 @@
 package militaryElite.interfaces;
 
-import militaryElite.HelpClasses.interfacesHelp.Repair;
+import militaryElite.helpClasses.interfacesHelp.Repair;
 
 import java.util.Collection;
 

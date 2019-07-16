@@ -1,6 +1,6 @@
 package militaryElite.interfaces;
 
-import militaryElite.Enumerations.Corps;
+import militaryElite.enumerations.Corps;
 
 public interface SpecialisedSoldier {
     Corps getCorps();

@@ -1,6 +1,6 @@
 package militaryElite;
 
-import militaryElite.Enumerations.Corps;
+import militaryElite.enumerations.Corps;
 import militaryElite.interfaces.SpecialisedSoldier;
 
 public abstract class SpecialisedSoldierImpl extends PrivateImpl implements SpecialisedSoldier {

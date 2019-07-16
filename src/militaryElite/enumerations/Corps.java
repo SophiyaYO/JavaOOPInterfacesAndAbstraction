@@ -1,4 +1,4 @@
-package militaryElite.Enumerations;
+package militaryElite.enumerations;
 
 public enum Corps {
     AIRFORCES,
