@@ -377,7 +377,7 @@ in that year in the format day/month/year \(the order of printing does not matte
 | Robot MK-13 558833251 |  |
 | End |  |
 | 1990 |  |
-| *** | *** |
+|  |  |
 | Citizen Stamat 16 0041018380 01/01/2000 | 01/01/2000 |
 | Robot MK-10 12345678 | 24/12/2000 |
 | Robot PP-09 00000001 |  |
@@ -385,7 +385,7 @@ in that year in the format day/month/year \(the order of printing does not matte
 | Pet Kosmat 12/06/2002  |  |
 | End |  |
 | 2000 |  |
-| *** | *** |
+|  |  |
 | Robot VV-XYZ 11213141 |  \<no output>|
 | Citizen Penka 35 7903210713 21/03/1979 |  |
 | Citizen Kane 40 7409073566 07/09/1974 |  |
