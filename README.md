@@ -427,7 +427,6 @@ On the only line of output, you should print the total amount of food purchased
 
 ![](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/blob/master/src/defineAnInterfacePerson/uml4.PNG)
 
-
 **Examples**
 
 | Input | Output |   
@@ -457,5 +456,77 @@ On the only line of output, you should print the total amount of food purchased
 [**Click ME for solution**](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/defineAnInterfacePerson)
 
 [Relative Link](src/defineAnInterfacePerson)
+
+*******************************************************
+
+### **Problem 5. Telephony**
+
+You have a business - manufacturing cell phones. But you have no software developers, 
+
+so you call your friends and ask them to help you create a cell phone software. 
+
+They agree and you start working on the project. The project consists of one main model -
+ 
+a Smartphone. Each of your smartphones should have functionalities of calling other phones 
+
+and browsing in the world wide web.
+
+Your friends are very busy, so you decide to write the code on your own. 
+
+Here is the mandatory assignment:
+You should have a model - Smartphone and two separate functionalities which your smartphone has - 
+
+to call other phones and to browse in the world wide web. 
+
+You should end up with one class and two interfaces.
+
+![](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/blob/master/src/telephony/uml0.PNG)
+
+**Input**
+
+The input comes from the console. It will hold two lines:
+
+> -First line: phone numbers to call (String), separated by spaces.
+
+> -Second line: sites to visit (String), separated by spaces.
+
+**Output**
+
+
+>	-First call all numbers in the order of input then browse all sites in order of input
+
+>	-The functionality of calling phones is printing on the console the number which are 
+being called in the format: "Calling... <number>"
+
+>	-The functionality of the browser should print on the console the site in format:
+
+> -"Browsing: <site>!" \(pay attention to the exclamation mark when printing URLs)
+
+>	-If there is a number in the input of the URLs, print: "Invalid URL!" and continue printing the rest of the URLs.
+
+>	-If there is a character different from a digit in a number, print: "Invalid number!" and continue to the next number.
+
+**Constraints**
+
+>	-Each site's URL should consist only of letters and symbols \(No digits are allowed in the URL address)
+
+**Examples**
+
+| Input | |
+| --- | --- |
+| 0882134215 0882134333 08992134215 0558123 3333 1 | Calling... 0882134215 |
+| http://softuni.bg http://youtube.com http://www.g00gle.com | Calling... 0882134333 |
+|| Calling... 08992134215 |
+|| Calling... 0558123 |
+|| Calling... 3333 |
+|| Calling... 1 |
+|| Browsing: http://softuni.bg! |
+|| Browsing: http://youtube.com! |
+|| Invalid URL!  |                    
+ 
+ 
+[**Click ME for solution**](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/telephony)
+
+[Relative Link](src/telephony)
 
 *******************************************************
