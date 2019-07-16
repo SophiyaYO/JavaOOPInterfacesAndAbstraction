@@ -429,6 +429,7 @@ On the only line of output, you should print the total amount of food purchased
 
 
 **Examples**
+
 | Input | Output |   
 | --- | --- |
 | 2 | 20 |
