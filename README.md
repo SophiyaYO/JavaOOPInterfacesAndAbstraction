@@ -429,7 +429,7 @@ On the only line of output, you should print the total amount of food purchased
 
 
 **Examples**
-| Input |  |   
+| Input | Output |   
 | --- | --- |
 | 2 | 20 |
 | Pesho 25 8904041303 04/04/1989 |  |
