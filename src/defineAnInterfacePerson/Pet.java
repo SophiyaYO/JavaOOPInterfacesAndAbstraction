@@ -1,6 +1,6 @@
 package defineAnInterfacePerson;
 
-public class Pet {
+public class Pet implements Birthable{
     private String name;
     private String birthDate;
 
@@ -13,6 +13,7 @@ public class Pet {
         return this.name;
     }
 
+    @Override
     public String getBirthDate() {
         return this.birthDate;
     }
