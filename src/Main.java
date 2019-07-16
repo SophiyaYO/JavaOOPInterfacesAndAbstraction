@@ -1,5 +1,7 @@
+import carShopExtended.CarImpl;
+import defineAnInterfacePerson.Buyer;
 import defineAnInterfacePerson.Citizen;
-import defineAnInterfacePerson.Pet;
+import defineAnInterfacePerson.Rebel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,42 +11,59 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        int n = Integer.parseInt(scanner.nextLine());
+
         List<Citizen> citizens = new ArrayList<>();
-        List<Pet> pets = new ArrayList<>();
-        String input;
-        while (!"End".equalsIgnoreCase(input = scanner.nextLine())) {
-            String[] tokens = input.split("\\s+");
+        List<Rebel> rebels = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            String[] tokens = scanner.nextLine().split("\\s+");
 
             switch (tokens.length) {
-                case 5:
-                    Citizen personData = new Citizen(tokens[1], Integer.parseInt(tokens[2]),
-                            tokens[3], tokens[4]);
-
-                    citizens.add(personData);
+                case 4:
+                    Citizen buyer = new Citizen(tokens[0], Integer.parseInt(tokens[1]), tokens[2], tokens[3]);
+                    citizens.add(buyer);
                     break;
+
                 case 3:
-                    if (tokens[0].equals("Pet")) {
-                        Pet pet = new Pet(tokens[1], tokens[2]);
-                        pets.add(pet);
-                    }
+                    Rebel buyer1 = new Rebel(tokens[0], Integer.parseInt(tokens[1]), tokens[2]);
+                    rebels.add(buyer1);
                     break;
-
+                default:
+                    break;
             }
         }
 
-        String comparableDate = scanner.nextLine();
+        int foodCount = 0;
+        String input;
+        while (!"End".equalsIgnoreCase(input = scanner.nextLine())) {
+            boolean continueIterating = true;
+            for (Citizen citizen : citizens) {
+                if (citizen.getName().equals(input)) {
+                    continueIterating = false;
+                    citizen.buyFood();
+                }
+            }
 
-        for (Citizen citizen : citizens) {
-            if (citizen.getBirthDate().contains(comparableDate)) {
-                System.out.println(citizen.getBirthDate());
+            if (continueIterating) {
+                for (Rebel rebel : rebels) {
+                    if (rebel.getName().equals(input)) {
+                        rebel.buyFood();
+                    }
+                }
             }
         }
 
-        for (Pet pet : pets) {
-            if (pet.getBirthDate().contains(comparableDate)) {
-                System.out.println(pet.getBirthDate());
-            }
-        }
+        foodCount += citizens
+                .stream()
+                .mapToInt(Citizen::getFood)
+                .sum();
+
+        foodCount += rebels
+                .stream()
+                .mapToInt(Rebel::getFood)
+                .sum();
+
+        System.out.println(foodCount);
 
     }
 }
