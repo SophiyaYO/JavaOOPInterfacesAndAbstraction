@@ -502,7 +502,6 @@ being called in the format: "Calling... <number>"
 "Browsing: <site>!" \(pay attention to the exclamation mark when printing URLs)
 
 >	- If there is a number in the input of the URLs, print: "Invalid URL!" and continue printing the rest of the URLs.
-
 >- If there is a character different from a digit in a number, print: "Invalid number!" and continue to the next number.
 
 **Constraints**
