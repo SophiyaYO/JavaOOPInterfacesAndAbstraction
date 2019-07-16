@@ -371,7 +371,7 @@ in that year in the format day/month/year \(the order of printing does not matte
 **Examples**
 
 | Input| Output |
-| ---  |  |
+| ---  | --- |
 | Citizen Pesho 22 9010101122 10/10/1990 | 10/10/1990 |
 | Pet Sharo 13/11/2005 |  |
 | Robot MK-13 558833251 |  |
