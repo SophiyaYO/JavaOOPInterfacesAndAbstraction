@@ -26,6 +26,12 @@ public class LieutenantGeneralImpl extends PrivateImpl implements LieutenantGene
                 .append("Privates:")
                 .append(System.lineSeparator());
 
+        for (Private soldier : this.privates) {
+            builder.append("  ")
+                    .append(soldier.toString())
+                    .append(System.lineSeparator());
+        }
+
         return builder.toString().trim();
     }
 }
