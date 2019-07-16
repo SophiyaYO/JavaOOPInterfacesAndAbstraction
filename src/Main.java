@@ -1,7 +1,9 @@
 import militaryElite.LieutenantGeneralImpl;
 import militaryElite.PrivateImpl;
+import militaryElite.SpyImpl;
 import militaryElite.interfaces.LieutenantGeneral;
 import militaryElite.interfaces.Private;
+import militaryElite.interfaces.Soldier;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,6 +19,9 @@ public class Main {
 
 
         System.out.println(general.toString());
+
+        Soldier spy = new SpyImpl(7, "James", "Bond", "007");
+        System.out.println(spy.toString());
     }
 }
 
