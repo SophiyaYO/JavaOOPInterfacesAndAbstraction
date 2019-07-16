@@ -1,8 +1,9 @@
 package militaryElite;
 
 import militaryElite.Enumerations.Corps;
+import militaryElite.interfaces.SpecialisedSoldier;
 
-public abstract class SpecialisedSoldierImpl extends PrivateImpl {
+public abstract class SpecialisedSoldierImpl extends PrivateImpl implements SpecialisedSoldier {
     private Corps corps;
 
     public SpecialisedSoldierImpl(int id, String firstName,
@@ -11,5 +12,15 @@ public abstract class SpecialisedSoldierImpl extends PrivateImpl {
         this.corps = corps;
     }
 
+    @Override
+    public Corps getCorps() {
+        return this.corps;
+    }
 
+    @Override
+    public String toString() {
+        return super.toString() +
+                System.lineSeparator() +
+               this.getCorps().toString() ;
+    }
 }
