@@ -438,7 +438,7 @@ On the only line of output, you should print the total amount of food purchased
 | Gosho |  |
 | Pesho |  |
 | End |  |
-| === | === |
+|  |  |
 | 4 | 25 |
 | Stamat 23 TheSwarm |  |
 | Toncho 44 7308185527 18/08/1973 |  |
@@ -451,7 +451,7 @@ On the only line of output, you should print the total amount of food purchased
 | Stamat |  |
 | Penka |  |
 | End |  |
-| --- | --- |
+
 
 [**Click ME for solution**](https://github.com/SophiyaYO/JavaOOPInterfacesAndAbstraction/tree/master/src/defineAnInterfacePerson)
 
