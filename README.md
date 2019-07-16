@@ -486,29 +486,28 @@ You should end up with one class and two interfaces.
 
 The input comes from the console. It will hold two lines:
 
-> -First line: phone numbers to call (String), separated by spaces.
+> - First line: phone numbers to call (String), separated by spaces.
 
-> -Second line: sites to visit (String), separated by spaces.
+> - Second line: sites to visit (String), separated by spaces.
 
 **Output**
 
 
->	-First call all numbers in the order of input then browse all sites in order of input
+>	- First call all numbers in the order of input then browse all sites in order of input
 
->	-The functionality of calling phones is printing on the console the number which are 
+>	- The functionality of calling phones is printing on the console the number which are 
 being called in the format: "Calling... <number>"
 
->	-The functionality of the browser should print on the console the site in format:
+>	- The functionality of the browser should print on the console the site in format:
+"Browsing: <site>!" \(pay attention to the exclamation mark when printing URLs)
 
-> -"Browsing: <site>!" \(pay attention to the exclamation mark when printing URLs)
+>	- If there is a number in the input of the URLs, print: "Invalid URL!" and continue printing the rest of the URLs.
 
->	-If there is a number in the input of the URLs, print: "Invalid URL!" and continue printing the rest of the URLs.
-
->	-If there is a character different from a digit in a number, print: "Invalid number!" and continue to the next number.
+>	- If there is a character different from a digit in a number, print: "Invalid number!" and continue to the next number.
 
 **Constraints**
 
->	-Each site's URL should consist only of letters and symbols \(No digits are allowed in the URL address)
+>	- Each site's URL should consist only of letters and symbols \(No digits are allowed in the URL address)
 
 **Examples**
 
