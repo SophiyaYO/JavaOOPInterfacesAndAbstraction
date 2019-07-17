@@ -1,12 +1,7 @@
 package militaryElite.enumerations;
 
 public enum Corps {
-    AIRFORCES,
-    MARINES;
+    Airforces,
+    Marines;
 
-    @Override
-    public String toString() {
-        return super.toString().toLowerCase();
-
-    }
 }

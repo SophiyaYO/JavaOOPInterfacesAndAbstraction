@@ -1,7 +1,4 @@
-import commands.CommandoCommand;
-import commands.EngineerCommand;
-import commands.LieutenantGeneralCommand;
-import commands.PrivateCommand;
+import commands.*;
 import commands.interfaces.Command;
 import militaryElite.interfaces.Soldier;
 
@@ -17,19 +14,22 @@ public class Main {
         Map<String, Command> commands = new HashMap<>();
 
         List<Soldier> soldiers = new ArrayList<>();
+
         commands.put("Private", new PrivateCommand(soldiers));
-        commands.put("LieutenantGeneral", new LieutenantGeneralCommand(soldiers));
+        commands.put("LeutenantGeneral", new LieutenantGeneralCommand(soldiers));
         commands.put("Engineer", new EngineerCommand(soldiers));
         commands.put("Commando", new CommandoCommand(soldiers));
+        commands.put("Spy", new SpyCommand(soldiers));
 
         while (!"End".equalsIgnoreCase(input = scanner.nextLine())) {
             String command = input.substring(0, input.indexOf(" "));
 
-            commands.get(command).execute(
-                    Arrays.stream(input.split("\\s+"))
-                            .skip(1)
-                    .collect(Collectors.toList())
-            );
+
+                commands.get(command).execute(
+                        Arrays.stream(input.split("\\s+"))
+                                .skip(1)
+                                .collect(Collectors.toList())
+                );
 
         }
 

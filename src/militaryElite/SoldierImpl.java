@@ -7,7 +7,7 @@ public abstract class SoldierImpl implements Soldier {
     private String firstName;
     private String lastName;
 
-    protected SoldierImpl(int id, String firstName, String lastName) {
+    public SoldierImpl(int id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;

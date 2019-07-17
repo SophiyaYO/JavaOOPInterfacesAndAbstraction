@@ -2,7 +2,6 @@ package militaryElite;
 
 import militaryElite.enumerations.Corps;
 import militaryElite.helpClasses.interfacesHelp.Mission;
-import militaryElite.helpClasses.interfacesHelp.Repair;
 import militaryElite.interfaces.Commandos;
 
 import java.util.ArrayList;
@@ -11,7 +10,6 @@ import java.util.List;
 
 public class CommandoImpl extends SpecialisedSoldierImpl implements Commandos {
 private List<Mission> missions;
-
 
     public CommandoImpl(int id, String firstName, String lastName, double salary, Corps corps) {
         super(id, firstName, lastName, salary, corps);

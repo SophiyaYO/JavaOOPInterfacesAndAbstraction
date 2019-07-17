@@ -1,9 +1,6 @@
 package factories;
 
-import militaryElite.CommandoImpl;
-import militaryElite.EngineerImpl;
-import militaryElite.LieutenantGeneralImpl;
-import militaryElite.PrivateImpl;
+import militaryElite.*;
 import militaryElite.enumerations.Corps;
 import militaryElite.enumerations.State;
 import militaryElite.helpClasses.MissionImpl;
@@ -50,10 +47,9 @@ public class SoldierFactory {
                 args.get(1),
                 args.get(2),
                 Double.parseDouble(args.get(3)),
-                Corps.valueOf(args.get(4).toUpperCase()));
+                Corps.valueOf(args.get(4)));
 
-
-        for (int i = 5; i < args.size(); i += 2) {
+        for (int i = 6; i < args.size(); i += 2) {
             Repair repair = new RepairImpl(args.get(i),
                     Integer.parseInt(args.get(i))
             );
@@ -69,17 +65,26 @@ public class SoldierFactory {
                 args.get(1),
                 args.get(2),
                 Double.parseDouble(args.get(3)),
-                Corps.valueOf(args.get(4).toUpperCase()));
+                Corps.valueOf(args.get(4)));
 
 
         for (int i = 5; i < args.size(); i += 2) {
             Mission mission = new MissionImpl(
                     args.get(i),
-                    State.valueOf(args.get(i + 1).toUpperCase())
+                    State.valueOf(args.get(i + 1))
             );
 
             commandos.addMission(mission);
         }
         return (Soldier) commandos;
+    }
+
+    public static Soldier produceSpy(List<String> args) {
+        return new SpyImpl(
+                Integer.parseInt(args.get(0)),
+                args.get(1),
+                args.get(2),
+                args.get(3)
+        );
     }
 }

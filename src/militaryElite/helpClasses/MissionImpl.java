@@ -14,7 +14,7 @@ public class MissionImpl implements Mission {
 
     @Override
     public void completeMission() {
-        this.state = State.finished;
+        this.state = State.Finished;
     }
 
     @Override
