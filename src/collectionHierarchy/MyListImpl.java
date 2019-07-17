@@ -17,12 +17,12 @@ public class MyListImpl<T> implements MyList<T> {
 
     @Override
     public T remove() {
-        return this.elements.remove(0);
+        return this.elements.remove(this.elements.size() - 1);
     }
 
     @Override
     public int add(T element) {
-        elements.add(0, element);
-        return 0;
+        this.elements.add(0, element);
+        return this.elements.indexOf(element);
     }
 }
