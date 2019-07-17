@@ -1,7 +1,10 @@
 package factories;
 
+import militaryElite.EngineerImpl;
 import militaryElite.LieutenantGeneralImpl;
 import militaryElite.PrivateImpl;
+import militaryElite.enumerations.Corps;
+import militaryElite.interfaces.Engineer;
 import militaryElite.interfaces.LieutenantGeneral;
 import militaryElite.interfaces.Private;
 import militaryElite.interfaces.Soldier;
@@ -24,6 +27,7 @@ public class SoldierFactory {
                 args.get(1),
                 args.get(2),
                 Double.parseDouble(args.get(3)));
+
         for (int i = 4; i < args.size(); i++) {
             int id = Integer.parseInt(args.get(i));
 
@@ -35,5 +39,20 @@ public class SoldierFactory {
         }
 
         return (Soldier) general;
+    }
+
+    public static Soldier produceEngineer(List<String> args) {
+        Engineer engineer = new EngineerImpl(
+                Integer.parseInt(args.get(0)),
+                args.get(1),
+                args.get(2),
+                Double.parseDouble(args.get(3)),
+                Corps.valueOf(args.get(4).toUpperCase()));
+
+
+        for (int i = 0; i < args.size(); i++) {
+
+        }
+        return (Soldier) engineer;
     }
 }
