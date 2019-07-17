@@ -7,7 +7,6 @@ import militaryElite.interfaces.Private;
 import militaryElite.interfaces.Soldier;
 
 import java.util.List;
-import java.util.Set;
 
 public class SoldierFactory {
     public static Soldier producePrivate(List<String> args) {
@@ -29,7 +28,7 @@ public class SoldierFactory {
             int id = Integer.parseInt(args.get(i));
 
             for (int i1 = 0; i1 < soldiers.size(); i1++) {
-                if (soldiers.get(i).getId() == id) {
+                if (soldiers.get(i1).getId() == id) {
                     general.addPrivate((Private) soldiers.get(i1));
                 }
             }
