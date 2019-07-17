@@ -1,7 +1,7 @@
-#**FAR FROM WORKING**
+# **FAR FROM WORKING**
 
 *******************
 
-##**WE`LL MAKE IT FROM THE BEGINNING ONE DAY**
+## **WILL MAKE IT FROM THE BEGINNING ONE DAY**
 *******************
 
