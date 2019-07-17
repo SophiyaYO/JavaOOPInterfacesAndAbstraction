@@ -43,6 +43,5 @@ public class EngineerImpl extends SpecialisedSoldierImpl implements Engineer {
         }
 
         return sb.toString().trim();
-
     }
 }
