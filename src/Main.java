@@ -1,3 +1,4 @@
+import commands.LeutenantGeneralCommand;
 import commands.PrivateCommand;
 import commands.interfaces.Command;
 import militaryElite.*;
@@ -16,6 +17,8 @@ public class Main {
 
         List<Soldier> soldiers = new ArrayList<>();
         commands.put("Private", new PrivateCommand(soldiers));
+        commands.put("LieutenantGeneral", new LeutenantGeneralCommand(soldiers));
+
         while (!"End".equalsIgnoreCase(input = scanner.nextLine())) {
             String command = input.substring(0, input.indexOf(" "));
 

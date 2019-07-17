@@ -14,6 +14,6 @@ public class LeutenantGeneralCommand extends BaseCommand {
 
     @Override
     public void execute(List<String> args) {
-        super.add(SoldierFactory.produceLeutenantGeneral(args));
+        super.add(SoldierFactory.produceLieutenantGeneral(args));
     }
 }
