@@ -3,6 +3,8 @@ import collectionHierarchy.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -26,29 +28,25 @@ public class Main {
 
         int countIfRemovedElemet = Integer.parseInt(reader.readLine());
 
-        StringBuilder sb1 = new StringBuilder();
-        StringBuilder sb2 = new StringBuilder();
-        StringBuilder sb3 = new StringBuilder();
-        StringBuilder sb4 = new StringBuilder();
-        StringBuilder sb5 = new StringBuilder();
-
-        for (int i = 0; i < tokens.length; i++) {
-            sb1.append(addCollection.add(tokens[i])).append(" ");
-            sb2.append(addRemoveCollection.add(tokens[i])).append(" ");
-            sb3.append(myList.add(tokens[i])).append(" ");
-
-        }
-
-        System.out.println(sb1.toString().trim());
-        System.out.println(sb2.toString().trim());
-        System.out.println(sb3.toString().trim());
+        List<String> sb1 = new ArrayList<>();
+        List<String> sb2 = new ArrayList<>();
+        List<String> sb3 = new ArrayList<>();
 
         for (String token : tokens) {
-            sb2.append(addRemoveCollection.remove()).append(" ");
-            sb3.append(myList.remove()).append(" ");
+            sb1.add(String.valueOf(addCollection.add(token)));
+            sb2.add(String.valueOf(addRemoveCollection.add(token)));
+            sb3.add(String.valueOf(myList.add(token)));
         }
-        System.out.println(sb4.toString().trim());
-        System.out.println(sb5.toString().trim());
+
+        System.out.println(String.join(" ", sb1));
+        System.out.println(String.join(" ", sb2));
+        System.out.println(String.join(" ", sb3));
+
+        for (String token : tokens) {
+
+        }
+        System.out.println(sb2.toString().trim());
+        System.out.println(sb3.toString().trim());
 
 
     }
