@@ -1,10 +1,15 @@
 package collectionHierarchy;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AddRemoveCollectionImpl<T> implements AddRemoveCollection<T> {
 
     private List<T> elements;
+
+    public AddRemoveCollectionImpl() {
+        this.elements = new ArrayList<>();
+    }
 
     @Override
     public T remove() {
