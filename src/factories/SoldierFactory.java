@@ -1,13 +1,16 @@
 package factories;
 
+import militaryElite.CommandoImpl;
 import militaryElite.EngineerImpl;
 import militaryElite.LieutenantGeneralImpl;
 import militaryElite.PrivateImpl;
 import militaryElite.enumerations.Corps;
-import militaryElite.interfaces.Engineer;
-import militaryElite.interfaces.LieutenantGeneral;
-import militaryElite.interfaces.Private;
-import militaryElite.interfaces.Soldier;
+import militaryElite.enumerations.State;
+import militaryElite.helpClasses.MissionImpl;
+import militaryElite.helpClasses.RepairImpl;
+import militaryElite.helpClasses.interfacesHelp.Mission;
+import militaryElite.helpClasses.interfacesHelp.Repair;
+import militaryElite.interfaces.*;
 
 import java.util.List;
 
@@ -31,9 +34,9 @@ public class SoldierFactory {
         for (int i = 4; i < args.size(); i++) {
             int id = Integer.parseInt(args.get(i));
 
-            for (int i1 = 0; i1 < soldiers.size(); i1++) {
-                if (soldiers.get(i1).getId() == id) {
-                    general.addPrivate((Private) soldiers.get(i1));
+            for (Soldier soldier : soldiers) {
+                if (soldier.getId() == id) {
+                    general.addPrivate((Private) soldier);
                 }
             }
         }
@@ -50,9 +53,33 @@ public class SoldierFactory {
                 Corps.valueOf(args.get(4).toUpperCase()));
 
 
-        for (int i = 0; i < args.size(); i++) {
+        for (int i = 5; i < args.size(); i += 2) {
+            Repair repair = new RepairImpl(args.get(i),
+                    Integer.parseInt(args.get(i))
+            );
 
+            engineer.addRepair(repair);
         }
         return (Soldier) engineer;
+    }
+
+    public static Soldier produceCommando(List<String> args) {
+        Commandos commandos = new CommandoImpl(
+        Integer.parseInt(args.get(0)),
+                args.get(1),
+                args.get(2),
+                Double.parseDouble(args.get(3)),
+                Corps.valueOf(args.get(4).toUpperCase()));
+
+
+        for (int i = 5; i < args.size(); i += 2) {
+            Mission mission = new MissionImpl(
+                    args.get(i),
+                    State.valueOf(args.get(i + 1).toUpperCase())
+            );
+
+            commandos.addMission(mission);
+        }
+        return (Soldier) commandos;
     }
 }

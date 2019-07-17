@@ -1,3 +1,4 @@
+import commands.CommandoCommand;
 import commands.EngineerCommand;
 import commands.LieutenantGeneralCommand;
 import commands.PrivateCommand;
@@ -19,6 +20,7 @@ public class Main {
         commands.put("Private", new PrivateCommand(soldiers));
         commands.put("LieutenantGeneral", new LieutenantGeneralCommand(soldiers));
         commands.put("Engineer", new EngineerCommand(soldiers));
+        commands.put("Commando", new CommandoCommand(soldiers));
 
         while (!"End".equalsIgnoreCase(input = scanner.nextLine())) {
             String command = input.substring(0, input.indexOf(" "));

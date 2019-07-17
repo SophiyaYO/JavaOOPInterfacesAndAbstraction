@@ -5,14 +5,14 @@ import militaryElite.interfaces.Soldier;
 
 import java.util.List;
 
-public class EngineerCommand extends BaseCommand {
-
-    public EngineerCommand(List<Soldier> soldiers) {
+public class CommandoCommand extends BaseCommand{
+    public CommandoCommand(List<Soldier> soldiers) {
         super(soldiers);
     }
 
     @Override
     public void execute(List<String> args) {
-        super.add(SoldierFactory.produceEngineer(args));
+        super.add(SoldierFactory.produceCommando(args));
+
     }
 }
