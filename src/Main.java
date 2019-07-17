@@ -1,41 +1,19 @@
-import commands.*;
-import commands.interfaces.Command;
-import militaryElite.interfaces.Soldier;
+import collectionHierarchy.AddCollection;
+import collectionHierarchy.AddCollectionImpl;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        String input;
-
-        Map<String, Command> commands = new HashMap<>();
-
-        List<Soldier> soldiers = new ArrayList<>();
-
-        commands.put("Private", new PrivateCommand(soldiers));
-        commands.put("LeutenantGeneral", new LieutenantGeneralCommand(soldiers));
-        commands.put("Engineer", new EngineerCommand(soldiers));
-        commands.put("Commando", new CommandoCommand(soldiers));
-        commands.put("Spy", new SpyCommand(soldiers));
-
-        while (!"End".equalsIgnoreCase(input = scanner.nextLine())) {
-            String command = input.substring(0, input.indexOf(" "));
-
-
-                commands.get(command).execute(
-                        Arrays.stream(input.split("\\s+"))
-                                .skip(1)
-                                .collect(Collectors.toList())
+        BufferedReader reader =
+                new BufferedReader(
+                        new InputStreamReader(
+                                System.in
+                        )
                 );
 
-        }
 
-        for (Soldier soldier : soldiers) {
-            System.out.println(soldier.toString());
-        }
     }
 }
 
