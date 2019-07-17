@@ -4,12 +4,13 @@ import militaryElite.*;
 import militaryElite.interfaces.Soldier;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-    String input;
+        String input;
 
         Map<String, Command> commands = new HashMap<>();
 
@@ -18,7 +19,11 @@ public class Main {
         while (!"End".equalsIgnoreCase(input = scanner.nextLine())) {
             String command = input.substring(0, input.indexOf(" "));
 
-
+            commands.get(command).execute(
+                    Arrays.stream(input.split("\\s+"))
+                            .skip(1)
+                    .collect(Collectors.toList())
+            );
 
         }
 

@@ -15,4 +15,8 @@ public class SoldierFactory {
                         Double.parseDouble(args.get(3))
         );
     }
+
+    public static Soldier produceLeutenantGeneral(List<String> args) {
+
+    }
 }
