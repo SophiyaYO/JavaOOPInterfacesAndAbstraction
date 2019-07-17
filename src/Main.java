@@ -37,16 +37,16 @@ public class Main {
             sb2.append(addRemoveCollection.add(tokens[i])).append(" ");
             sb3.append(myList.add(tokens[i])).append(" ");
 
-            if (countIfRemovedElemet-->0) {
-                sb4.append(addRemoveCollection.remove()).append(" ");
-                sb5.append(myList.remove()).append(" ");
-
-            }
         }
 
         System.out.println(sb1.toString().trim());
         System.out.println(sb2.toString().trim());
         System.out.println(sb3.toString().trim());
+
+        for (String token : tokens) {
+            sb2.append(addRemoveCollection.remove()).append(" ");
+            sb3.append(myList.remove()).append(" ");
+        }
         System.out.println(sb4.toString().trim());
         System.out.println(sb5.toString().trim());
 
