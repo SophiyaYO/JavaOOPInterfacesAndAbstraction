@@ -42,12 +42,16 @@ public class Main {
         System.out.println(String.join(" ", sb2));
         System.out.println(String.join(" ", sb3));
 
-        for (String token : tokens) {
+        sb1.clear();
+        sb2.clear();
 
+        for (int i = 0; i < countIfRemovedElemet; i++) {
+            sb1.add(addRemoveCollection.remove());
+            sb2.add(myList.remove());
         }
-        System.out.println(sb2.toString().trim());
-        System.out.println(sb3.toString().trim());
 
+        System.out.println(String.join(" ", sb1));
+        System.out.println(String.join(" ", sb2));
 
     }
 }

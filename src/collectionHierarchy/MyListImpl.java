@@ -17,7 +17,7 @@ public class MyListImpl<T> implements MyList<T> {
 
     @Override
     public T remove() {
-        return this.elements.remove(this.elements.size() - 1);
+        return this.elements.remove(0);
     }
 
     @Override
