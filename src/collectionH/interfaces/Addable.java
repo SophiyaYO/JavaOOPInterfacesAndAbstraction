@@ -1,4 +1,4 @@
-package collectionH;
+package collectionH.interfaces;
 
 public interface Addable {
 

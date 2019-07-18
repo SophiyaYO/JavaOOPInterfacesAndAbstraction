@@ -1,9 +1,11 @@
 package collectionH;
 
+import collectionH.interfaces.MyList;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyListImpl extends Collection implements Addable, AddRemovable, MyList {
+public class MyListImpl extends Collection implements MyList {
     private List<String> elements;
 
     public MyListImpl() {

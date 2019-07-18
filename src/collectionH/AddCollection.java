@@ -1,13 +1,14 @@
 package collectionH;
 
+import collectionH.interfaces.Addable;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class AddCollection extends Collection implements Addable {
     private List<String> elements;
 
-
-    protected AddCollection() {
+    public AddCollection() {
         this.elements = new ArrayList<>();
     }
 

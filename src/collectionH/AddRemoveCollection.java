@@ -1,12 +1,14 @@
 package collectionH;
 
+import collectionH.interfaces.AddRemovable;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class AddRemoveCollection extends Collection implements Addable, AddRemovable {
+public class AddRemoveCollection extends Collection implements AddRemovable {
     private List<String> elements;
 
-    protected AddRemoveCollection() {
+    public AddRemoveCollection() {
         this.elements = new ArrayList<>();
     }
 
