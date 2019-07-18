@@ -16,4 +16,5 @@ public class AddCollectionImpl<T> implements AddCollection<T> {
 
          return this.elements.size() - 1;
     }
+
 }
