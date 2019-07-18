@@ -2,24 +2,33 @@ package collectionH;
 
 import collectionH.interfaces.AddRemovable;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class AddRemoveCollection extends Collection implements AddRemovable {
-    private List<String> elements;
 
-    public AddRemoveCollection() {
-        this.elements = new ArrayList<>();
+    protected AddRemoveCollection() {
+        super();
     }
 
     @Override
     public String remove() {
-        return this.elements.remove(this.elements.size() - 1);
+        if (super.getCollectionSize() > 0) {
+            String lastElement = super.getItems().get(super.getCollectionSize() - 1);
+            if ( lastElement != null) {
+                super.getItems().remove(super.getCollectionSize() - 1);
+            }
+            return lastElement;
+        } else {
+            throw new IllegalArgumentException("Invalid Operation! Nothing to remove");
+        }
+
     }
 
     @Override
     public int add(String element) {
-        this.elements.add(0, element);
-        return this.elements.indexOf(element);
+        if (Validator.collectionSize(super.getCollectionSize())) {
+            super.getItems().add(0, element);
+            return 0;
+        } else {
+            throw new IllegalArgumentException("Collection size is out of limit. You CANNOT add more elements!");
+        }
     }
 }

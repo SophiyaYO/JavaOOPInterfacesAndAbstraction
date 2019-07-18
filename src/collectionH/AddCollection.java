@@ -6,10 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AddCollection extends Collection implements Addable {
-    private List<String> elements;
 
     public AddCollection() {
-        this.elements = new ArrayList<>();
+        super();
     }
 
     @Override
