@@ -2,9 +2,6 @@ package collectionH;
 
 import collectionH.interfaces.Addable;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class AddCollection extends Collection implements Addable {
 
     public AddCollection() {
@@ -13,8 +10,13 @@ public class AddCollection extends Collection implements Addable {
 
     @Override
     public int add(String element) {
-        this.elements.add(element);
-        return this.elements.indexOf(element);
+        if (Validator.collectionSize(super.getCollectionSize())) {
+            super.getElements().add(element);
+            return super.getCollectionSize()-1;
+        }else {
+            throw new IllegalArgumentException("Collection size is out of limit. You CANNOT add more elements!");
+        }
+
     }
 
 }

@@ -11,9 +11,9 @@ public class AddRemoveCollection extends Collection implements AddRemovable {
     @Override
     public String remove() {
         if (super.getCollectionSize() > 0) {
-            String lastElement = super.getItems().get(super.getCollectionSize() - 1);
+            String lastElement = super.getElements().get(super.getCollectionSize() - 1);
             if ( lastElement != null) {
-                super.getItems().remove(super.getCollectionSize() - 1);
+                super.getElements().remove(super.getCollectionSize() - 1);
             }
             return lastElement;
         } else {
@@ -25,7 +25,7 @@ public class AddRemoveCollection extends Collection implements AddRemovable {
     @Override
     public int add(String element) {
         if (Validator.collectionSize(super.getCollectionSize())) {
-            super.getItems().add(0, element);
+            super.getElements().add(0, element);
             return 0;
         } else {
             throw new IllegalArgumentException("Collection size is out of limit. You CANNOT add more elements!");

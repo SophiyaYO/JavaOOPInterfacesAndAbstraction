@@ -20,7 +20,7 @@ abstract class Collection {
         return this.items.size();
     }
 
-    protected List<String> getItems() {
+    protected List<String> getElements() {
         return this.items;
     }
 }

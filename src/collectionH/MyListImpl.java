@@ -2,29 +2,41 @@ package collectionH;
 
 import collectionH.interfaces.MyList;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class MyListImpl extends Collection implements MyList {
-    private List<String> elements;
 
-    public MyListImpl() {
-        this.elements = new ArrayList<>();
+    protected MyListImpl() {
+        super();
     }
 
     @Override
     public String remove() {
-        return this.elements.remove(0);
+        if (super.getCollectionSize() > 0) {
+            String firstElement = super.getElements().get(0);
+
+            if (super.getElements().size() > 0) {
+                super.getElements().remove(0);
+            } else {
+                return null;
+            }
+
+            return firstElement;
+        } else {
+            throw new IllegalArgumentException("Invalid Operation! Nothing to remove");
+        }
     }
 
     @Override
     public int add(String element) {
-        this.elements.add(0,element);
-        return this.elements.indexOf(element);
+        if (Validator.collectionSize(super.getCollectionSize())) {
+            super.getElements().add(0, element);
+            return 0;
+        } else {
+            throw new IllegalArgumentException("Collection size is out of limit. You CANNOT add more elements!");
+        }
     }
 
     @Override
     public int getUsed() {
-        return this.elements.size();
+        return super.getCollectionSize();
     }
 }
